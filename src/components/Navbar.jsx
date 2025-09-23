@@ -37,15 +37,15 @@ const Navbar = ({setShowLogin}) => {
             </div>
 
             <div className='flex max-sm:flex-col items-start sm:items-center gap-6'> 
-                <button onClick={()=>navigate('/owner')} 
+                <button onClick={()=> navigate('/owner')} 
                 className="cursor-pointer">Dashboard</button>
-                <button onClick={()=>setShowLogin(true)} 
+                <button onClick={()=> setShowLogin(true)} 
                 className="cursor-pointer px-8 py-2 bg-primary
                 hover:bg-primary-dull transition-all text-white rounded-lg">Login</button>
             </div>
         </div>
 
-            <button className='sm:hidden cursor-pointer' aria-label="Menu" onClick={()=> setOpen (!open)}>
+            <button className='sm:hidden cursor-pointer' aria-label="Menu" onClick={()=> setOpen(!open)}>
                 <img src={open ? assets.close_icon : assets.menu_icon} alt="menu" />
             </button>
     </div>
