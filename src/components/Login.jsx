@@ -40,7 +40,7 @@ const Login = ({setShowLogin}) => {
                     Create an account? <span onClick={() => setState("register")} className="text-indigo-500 cursor-pointer">click here</span>
                 </p>
             )}
-            <button className="bg-primary hover:bg-blue-600 transition-all text-white w-full py-2 rounded-md cursor-pointer">
+            <button className="bg-primary hover:bg-blue -600 transition-all text-white w-full py-2 rounded-md cursor-pointer">
                 {state === "register" ? "Create Account" : "Login"}
             </button>
         </form>
